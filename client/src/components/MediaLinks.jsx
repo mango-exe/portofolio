@@ -27,7 +27,7 @@ const MediaLinks = () => {
         href='https://github.com/mango-exe'
         target='_blank'
         rel='noopener noreferrer'
-        className='text-white hover:text-black transition duration-300'
+        className='text-white hover:text-gray-600 transition duration-300'
         title='GitHub'
       >
         <Github className='w-10 h-10' />
