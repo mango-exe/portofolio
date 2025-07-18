@@ -26,7 +26,7 @@ const Expertise = ({ emblaApi, componentIndex }) => {
       level: 'Advanced'
     },
     {
-      logo: '/express.svg',
+      logo: `${process.env.PUBLIC_URL}/express.svg`,
       title: 'Express',
       level: 'Advanced'
     },
@@ -36,7 +36,7 @@ const Expertise = ({ emblaApi, componentIndex }) => {
       level: 'Intermediate'
     },
     {
-      logo: '/flask.svg',
+      logo: `${process.env.PUBLIC_URL}/flask.svg`,
       title: 'Flask',
       level: 'Intermediate'
     },
