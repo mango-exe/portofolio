@@ -94,7 +94,7 @@ const Expertise = ({ emblaApi, componentIndex }) => {
 
   const certifications = [
     {
-      logo: `${process.env.PUBLIC_URL}'/cloud-practitioner-badge.png'`,
+      logo: `${process.env.PUBLIC_URL}/cloud-practitioner-badge.png'`,
       title: 'AWS Cloud Pracitioner',
       link: 'https://www.credly.com/badges/299934ff-4efe-4a91-ac3b-c172519b9af5/public_url'
     },
