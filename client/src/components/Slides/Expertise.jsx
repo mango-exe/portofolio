@@ -129,12 +129,12 @@ const Expertise = ({ emblaApi, componentIndex }) => {
   )
 
   return (
-    <div className='h-[90vh] pt-5 pb-5 embla__slide__content px-10 overflow-y-auto scrollbar-white-rounded'>
+    <div className='h-[100%] px-4 sm:px-6 md:px-10 pt-5 space-y-10'>
        <SplitTextAnimation
          key={update}
          as='h1'
          text='Technical skills'
-         containerClassName="text-3xl sm:text-5xl font-bold max-w-[950px] invisible text-left content-end justify-self-start mb-[5vh]"
+         containerClassName="text-3xl sm:text-5xl font-bold max-w-[950px] invisible text-left content-end justify-self-start"
        />
 
        <div className='technologies-container'>

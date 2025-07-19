@@ -13,8 +13,8 @@ const Experience = ({ emblaApi, componentIndex }) => {
   }, [currentMainShownSlide, componentIndex])
 
   return (
-    <div className="h-[90vh] flex flex-col p-5 overflow-y-auto scrollbar-white-rounded">
-      <div className="max-w-full sm:max-w-[950px] space-y-2">
+    <div className="h-[100%] px-4 sm:px-6 md:px-10 pt-5 space-y-10">
+      <div className="max-w-full sm:max-w-[950px]">
         <SplitTextAnimation
           key={update}
           as="h1"
@@ -29,7 +29,7 @@ const Experience = ({ emblaApi, componentIndex }) => {
         />
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-10">
         <p className="text-lg sm:text-xl font-semibold text-left">
           Cyberllence Innovation is an educational startup that uses the power of machine learning
           algorithms to facilitate the teaching and learning process. My contributions to the

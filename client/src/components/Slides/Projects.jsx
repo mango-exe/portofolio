@@ -57,45 +57,43 @@ const Projects = ({ emblaApi, componentIndex }) => {
       github: 'https://github.com/mango-exe/go-load-balancer.git',
       live: '',
       technologies: ['GO']
+    },
+    {
+      name: 'Pidify',
+      description: 'Tool for editing PDF files while preserving original file layout.',
+      github: 'https://github.com/mango-exe/pidify-mern',
+      live: '',
+      technologies: ['React', 'Express', 'MongoDB', 'Typescript', 'Python']
     }
   ]
 
   return (
-     <div className="h-[90vh] flex flex-col justify-center gap-y-[1.5vh] sm:gap-y-[4vh] embla__slide__content sm:px-10 px-4 overflow-y-auto">
+     <div className="h-[100%] px-4 sm:px-6 md:px-10 pt-5 space-y-10">
       <SplitTextAnimation
         key={update}
         as='h1'
         text='Crafted with code'
-        containerClassName='text-3xl sm:text-5xl font-bold max-w-[950px] invisible text-left content-end justify-self-start mb-[5vh]'
+        containerClassName='text-2xl sm:text-3xl md:text-4xl font-bold max-w-[950px] invisible text-left'
       />
+      <SplitTextAnimation
+        key={update + 1}
+        as='h2'
+        text='Projects I’ve Worked On Professionally'
+        containerClassName='text-2xl font-bold max-w-[950px] invisible text-left content-end justify-self-start'
+      />
+      {professionalProjects.map((project, idx) => (
+        <ProjectCard key={idx} {...project} />
+      ))}
 
-      <div>
-        <SplitTextAnimation
-          key={update + 1}
-          as='h2'
-          text='Projects I’ve Worked On Professionally'
-          containerClassName='text-2xl font-bold max-w-[950px] invisible text-left content-end justify-self-start'
-        />
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 overflow-y-auto max-h-[30vh] scrollbar-white-rounded'>
-          {professionalProjects.map((project, idx) => (
-            <ProjectCard key={idx} {...project} />
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <SplitTextAnimation
-          key={update + 2}
-          as='h2'
-          text='Projects Built for Learning'
-          containerClassName='text-2xl font-bold max-w-[950px] invisible text-left content-end justify-self-start'
-        />
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 overflow-y-auto max-h-[25vh] scrollbar-white-rounded'>
-          {personalProjects.map((project, idx) => (
-            <ProjectCard key={idx} {...project} />
-          ))}
-        </div>
-      </div>
+      <SplitTextAnimation
+        key={update + 2}
+        as='h2'
+        text='Projects Built for Learning'
+        containerClassName='text-2xl font-bold max-w-[950px] invisible text-left content-end justify-self-start'
+      />
+      {personalProjects.map((project, idx) => (
+        <ProjectCard key={idx} {...project} />
+      ))}
     </div>
   )
 }

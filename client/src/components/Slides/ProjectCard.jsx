@@ -2,7 +2,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectCard = ({ name, description, github, live, technologies }) => {
   return (
-    <div className="border-4 rounded-xl p-4 shadow-md hover:shadow-lg transition">
+    <div className="border-4 rounded-xl p-4 shadow-md hover:shadow-lg transition w-[100%]">
       <div className="flex justify-between items-start">
         <h3 className="text-xl font-semibold">{name}</h3>
         {technologies && (

@@ -97,7 +97,7 @@ const EmblaCarousel = (props) => {
         <div className='embla__container'>
           {slides.map(({ title, component: Component }, index) => (
             <div onClick={() => handleClickSlide(index)} className={`embla__slide ${emblaApi?.selectedScrollSnap() !== index ? 'cursor-pointer' : ''}`} key={index}>
-              <div className='embla_slide_content'>
+              <div className='embla_slide_content scrollbar-white-rounded'>
                 <Component emblaApi={emblaApi} componentIndex={index} />
               </div>
             </div>
