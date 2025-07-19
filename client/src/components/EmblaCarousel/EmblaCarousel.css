@@ -39,12 +39,6 @@
   border: 16px;
 }
 
-@media (max-width: 800px) {
-    .embla_slide_content {
-        height: 75vh !important;
-    }
-}
-
 .embla_slide_content {
     background-color: var(--slide-background-color);
     background-image: var(--background-texture);
