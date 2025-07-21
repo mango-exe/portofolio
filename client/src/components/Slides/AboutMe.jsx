@@ -13,7 +13,7 @@ const AboutMe = ({ emblaApi, componentIndex }) => {
   }, [currentMainShownSlide, componentIndex])
 
   return (
-    <div className="h-[100%] px-4 sm:px-6 md:px-10 space-y-10 pt-5 lg:flex lg:flex-col lg:justify-center">
+    <div className="h-[100%] px-4 sm:px-6 md:px-10 space-y-10 pt-5 md:flex md:flex-col md:justify-center lg:flex lg:flex-col lg:justify-center">
       <SplitTextAnimation
         key={update}
         as="h1"
