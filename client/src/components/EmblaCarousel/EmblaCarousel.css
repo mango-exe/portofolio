@@ -42,7 +42,7 @@
 .embla_slide_content {
     background-color: var(--slide-background-color);
     background-image: var(--background-texture);
-    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
     overflow-y: auto;
     border-radius: 16px;
 }

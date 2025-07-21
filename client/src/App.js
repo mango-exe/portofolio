@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import EmblaCarousel from './components/EmblaCarousel'
 import SlotTextAnimation from './components/SlotTextAnimation'
@@ -38,9 +38,24 @@ function App() {
       title: 'Projects',
       component: Projects
     }
-    ]
+  ]
 
   const [heading, setHeading] = useState(SLIDES[0].title)
+
+  const setVhUnit = () => {
+    const vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  }
+
+  useEffect(() => {
+    setVhUnit()
+
+    window.addEventListener('resize', setVhUnit)
+
+    return () => {
+      window.removeEventListener('resize', setVhUnit)
+    }
+  },  [])
 
   const onSlideChange = (headingText)  => {
     setHeading(headingText)
