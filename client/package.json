@@ -4,7 +4,6 @@
   "homepage": "https://mango-exe.github.io/portofolio",
   "private": true,
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.8",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -16,14 +15,15 @@
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
     "react-scripts": "5.0.1",
-    "tailwindcss": "^4.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build:css && npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "build:css": "NODE_ENV=production postcss -c postcss.tailwind-cli.js src/index.css -o src/output.css",
+    "dev:css": "postcss src/index.css -o src/output.css --watch",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,7 +46,10 @@
     ]
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.11",
-    "gh-pages": "^6.3.0"
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.17"
   }
 }
