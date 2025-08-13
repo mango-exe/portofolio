@@ -48,7 +48,6 @@ const Projects = ({ emblaApi, componentIndex }) => {
       name: 'Portfolio Website',
       description: 'Built with React and TailwindCSS to showcase my work.',
       github: 'https://github.com/mango-exe/portofolio.git',
-      // live: 'https://myportfolio.com'
       technologies: ['React', 'TailwindCSS']
     },
     {
@@ -64,6 +63,13 @@ const Projects = ({ emblaApi, componentIndex }) => {
       github: 'https://github.com/mango-exe/pidify-mern',
       live: '',
       technologies: ['React', 'Express', 'MongoDB', 'Typescript', 'Python']
+    },
+    {
+      name: 'TODO in NextJS',
+      description: 'Yours sincerest TODO app in NextJs.',
+      github: 'https://github.com/mango-exe/todo-nextjs',
+      live: '',
+      technologies: ['NextJS', 'Typescript', 'Drizzle', 'TailwindCSS', 'NextAuth']
     }
   ]
 

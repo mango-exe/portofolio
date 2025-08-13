@@ -9,9 +9,12 @@
 }
 
 body {
-  background-color: var(--background-color);
-  background-image: var(--background-texture);
-  background-repeat: repeat;
+  background-color: black;
+  background-image:
+    radial-gradient(circle at 50% 100%, rgba(70, 85, 110, 0.5) 0%, transparent 60%),
+    radial-gradient(circle at 50% 100%, whitesmoke 0%, transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(181, 184, 208, 0.3) 0%, transparent 80%);
+
   background-size: auto;
   color: white;
   height: 100vh;
