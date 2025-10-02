@@ -70,6 +70,13 @@ const Projects = ({ emblaApi, componentIndex }) => {
       github: 'https://github.com/mango-exe/todo-nextjs',
       live: '',
       technologies: ['NextJS', 'Typescript', 'Drizzle', 'TailwindCSS', 'NextAuth']
+    },
+    {
+      name: 'CrewAI',
+      description: 'Chat based application which enables the user to interact with multiple LLM providers in the same conversation by mentioning which LLM to respond (e.g @Gemini What is the biggest mountaint in the world?).',
+      github: 'https://github.com/mango-exe/crew-ai',
+      live: '',
+      technologies: ['NextJS', 'Typescript', 'Drizzle', 'TailwindCSS', 'Langchain']
     }
   ]
 
