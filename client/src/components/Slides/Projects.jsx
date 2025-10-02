@@ -45,6 +45,20 @@ const Projects = ({ emblaApi, componentIndex }) => {
 
   const personalProjects = [
     {
+      name: 'CrewAI',
+      description: 'Chat based application which enables the user to interact with multiple LLM providers in the same conversation by mentioning which LLM to respond (e.g @Gemini What is the biggest mountaint in the world?).',
+      github: 'https://github.com/mango-exe/crew-ai',
+      live: '',
+      technologies: ['NextJS', 'Typescript', 'Drizzle', 'TailwindCSS', 'Langchain']
+    },
+    {
+      name: 'Pidify',
+      description: 'Tool for editing PDF files while preserving original file layout.',
+      github: 'https://github.com/mango-exe/pidify-mern',
+      live: '',
+      technologies: ['React', 'Express', 'MongoDB', 'Typescript', 'Python']
+    },
+    {
       name: 'Portfolio Website',
       description: 'Built with React and TailwindCSS to showcase my work.',
       github: 'https://github.com/mango-exe/portofolio.git',
@@ -58,25 +72,11 @@ const Projects = ({ emblaApi, componentIndex }) => {
       technologies: ['GO']
     },
     {
-      name: 'Pidify',
-      description: 'Tool for editing PDF files while preserving original file layout.',
-      github: 'https://github.com/mango-exe/pidify-mern',
-      live: '',
-      technologies: ['React', 'Express', 'MongoDB', 'Typescript', 'Python']
-    },
-    {
       name: 'TODO in NextJS',
       description: 'Yours sincerest TODO app in NextJs.',
       github: 'https://github.com/mango-exe/todo-nextjs',
       live: '',
       technologies: ['NextJS', 'Typescript', 'Drizzle', 'TailwindCSS', 'NextAuth']
-    },
-    {
-      name: 'CrewAI',
-      description: 'Chat based application which enables the user to interact with multiple LLM providers in the same conversation by mentioning which LLM to respond (e.g @Gemini What is the biggest mountaint in the world?).',
-      github: 'https://github.com/mango-exe/crew-ai',
-      live: '',
-      technologies: ['NextJS', 'Typescript', 'Drizzle', 'TailwindCSS', 'Langchain']
     }
   ]
 
